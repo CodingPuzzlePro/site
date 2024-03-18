@@ -1,91 +1,41 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Coding Puzzle Pro site</title>
-    <style>
-      :root {
-        background: #f5f6fa;
-        color: #9c9c9c;
-        font: 1rem "PT Sans", sans-serif;
-      }
-      
-      html,
-      body,
-      .container {
-        height: 100%;
-      }
-      
-      a {
-        color: inherit;
-      }
-      a:hover {
-        color: #0097B2;
-      }
-      
-      .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      }
-      
-      .uppercase {
-        text-transform: uppercase;
-      }
-      
-      .btn {
-        display: inline-block;
-        background: transparent;
-        color: inherit;
-        font: inherit;
-        border: 0;
-        outline: 0;
-        padding: 0;
-        transition: all 200ms ease-in;
-        cursor: pointer;
-      }
-      .btn--primary {
-        background: #0097B2;
-        color: #fff;
-        box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
-        border-radius: 2px;
-        padding: 12px 36px;
-      }
-      .btn--primary:hover {
-        background: #6c7ff2;
-      }
-      .btn--primary:active {
-        background: #0097B2;
-        box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, 0.2);
-      }
-      .btn--inside {
-        margin-left: -96px;
-      }
-      
-      .form__field {
-        width: 360px;
-        background: #fff;
-        color: #a3a3a3;
-        font: inherit;
-        box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
-        border: 0;
-        outline: 0;
-        padding: 22px 18px;
-      }
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+          rel="stylesheet" 
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div class="container">
-    	<div class="container__item">
-    		<form class="form">
-    			<input type="text" class="form__field" placeholder="Enter problem number" />
-    			<button type="button" class="btn btn--primary btn--inside uppercase">Send</button>
-    		</form>
-    	</div>
-    
-    	<div class="container__item container__item--bottom">
-    		<p>Designed by <a href="https://instagram.com/knightk0der" target="_blank">Knightk0der</a>.</p>
-    	</div>
+      <div class="container__parent">
+        <div class="row">
+          <div class="col-12 logo-container">
+            <div class="card mx-auto text-center logo" style="width: 18rem;">
+              <img src="img/logo.png" class="card-img-top" alt="logo">
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="container__item mx-auto text-center">
+              <form class="form">
+                <input type="number" id="link-number-input" class="form__field" placeholder="Enter problem number" />
+                <button type="button" class="btn btn--primary btn--inside uppercase" id="submit-button">Go</button>
+              </form>
+            </div>
+            <div class="container__item text-center container__item--bottom">
+              <p>Designed by <a href="https://instagram.com/codingpuzzlepro" target="_blank">CodingPuzzlePro</a>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+            crossorigin="anonymous"></script>
   </body>
 </html>
