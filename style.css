@@ -1,34 +1,38 @@
 :root {
-    /* background: #f5f6fa; */
     color: #9c9c9c;
     font: 1rem "PT Sans", sans-serif;
-  }
-  body {
+}
+
+body {
     background-image: radial-gradient(circle, #0097b2, #3b6a8e, #41425b, #2b212b, #000000);
-  }
-  html,
-  body,
-  .container__parent {
+}
+
+html,
+body,
+.container__parent {
     height: 100%;
-  }
-  
-  .container__parent {
+}
+
+.container__parent {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-  
-  .uppercase {
+}
+
+.uppercase {
     text-transform: uppercase;
-  }
-  a {
+}
+
+a {
     color: inherit;
-  }
-  a:hover {
+}
+
+a:hover {
     color: #0097B2;
-  }
-  .btn {
+}
+
+.btn {
     display: inline-block;
     background: transparent;
     color: inherit;
@@ -38,25 +42,30 @@
     padding: 0;
     transition: all 200ms ease-in;
     cursor: pointer;
-  }
-  .btn--primary {
+}
+
+.btn--primary {
     background: #0097B2;
     color: #fff;
     box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
     border-radius: 2px;
     padding: 12px 36px;
-  }
-  .btn--primary:hover {
+}
+
+.btn--primary:hover {
     background: #6c7ff2;
-  }
-  .btn--primary:active {
+}
+
+.btn--primary:active {
     background: #0097B2;
     box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, 0.2);
-  }
-  .btn--inside {
+}
+
+.btn--inside {
     margin-left: -80px;
-  }
-  .form__field {
+}
+
+.form__field {
     width: 360px;
     background: #fff;
     color: #a3a3a3;
@@ -65,22 +74,26 @@
     border: 0;
     outline: 0;
     padding: 22px 18px;
-  }
+}
 
-  .logo {
+.logo {
     border: none;
-  }
-  .logo img {
+}
+
+.logo img {
     border-radius: 50%;
-  }
-  .card {
+}
+
+.card {
     background-color: transparent;
-  }
-  .logo-container {
-    margin-top: 50%;
+}
+
+.logo-container {
+    margin-top: 30%;
     margin-bottom: 20px;
-  }
-  .container__item--bottom {
+}
+
+.container__item--bottom {
     margin-top: 20px;
     color: azure;
-  }
+}
