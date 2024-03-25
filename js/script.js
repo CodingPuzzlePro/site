@@ -1,5 +1,6 @@
 const dataset = new Map([
-    ["1", "https://codeforces.com/contest/1941/problem/A"]
+    ["1", "https://codeforces.com/contest/1941/problem/A"],
+    ["2", "https://www.hackerrank.com/challenges/birthday-cake-candles/problem"]
 ]);
 
 
